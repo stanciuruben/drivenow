@@ -37,7 +37,7 @@ const Navbar: FC = () => {
     }
 
     return (
-        <nav className="bg-white border-b border-gray-200 dark:bg-gray-900">
+        <nav className="fixed top-0 left-0 w-full h-fit z-50 bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a
                     href="#"
