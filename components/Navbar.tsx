@@ -75,7 +75,7 @@ const Navbar: FC = () => {
                                             flex items-center justify-center"
                             >
                                 <span className="inline-block font-semibold mr-3 md:hidden text-gray-500 dark:text-white">
-                                    Theme Switcher
+                                    Switch Theme
                                 </span>
                                 <span className='inline-block w-6 h-6 bg-[url("/icons/darkmode.svg")] dark:bg-[url("/icons/lightmode.svg")]' ></span>
                             </button>

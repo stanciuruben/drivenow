@@ -14,5 +14,12 @@ module.exports = {
 			}
 		}
 	},
-	plugins: []
+	plugins: [
+		require('tailwindcss'),
+		require('@tailwindcss/forms'),
+		function ({ addVariant }) {
+			addVariant('child', '& > *');
+		},
+		require('autoprefixer')
+	]
 };
