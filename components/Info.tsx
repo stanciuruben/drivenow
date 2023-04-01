@@ -9,7 +9,7 @@ const Info: FC = () => {
             data-accordion="collapse"
             className='my-20 w-full flex flex-col items-center justify-start bg-gray-100 dark:bg-gray-900'
         >
-            <h2 id="accordion-collapse-heading-1" className='w-full max-w-[60rem]' >
+            <h2 id="accordion-collapse-heading-1" className='w-full max-w-screen-lg' >
                 <button
                     type="button"
                     className="flex items-center justify-between w-full p-5 text-left text-gray-500 dark:text-gray-200
