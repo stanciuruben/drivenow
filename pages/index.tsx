@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Header from '@/components/Header';
 import Cards from '@/components/Cards';
 import Info from '@/components/Info';
+import Fleet from '@/components/Fleet';
 
 export default function Home () {
   return (
@@ -18,6 +19,7 @@ export default function Home () {
         <Header />
         <Cards />
         <Info />
+        <Fleet />
       </main>
     </>
   )

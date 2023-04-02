@@ -7,17 +7,20 @@ const Info: FC = () => {
         <article
             id="accordion-collapse"
             data-accordion="collapse"
-            className='my-20 w-full flex flex-col items-center justify-start bg-gray-100 dark:bg-gray-900'
+            className='my-32 w-full flex flex-col items-center justify-start bg-gray-100 dark:bg-gray-900'
         >
-            <h2 id="accordion-collapse-heading-1" className='w-full max-w-screen-lg' >
+            <h2
+                id="accordion-collapse-heading-1"
+                className='w-full max-w-screen-lg'
+            >
                 <button
                     type="button"
                     className="flex items-center justify-between w-full p-5 text-left text-gray-500 dark:text-gray-200
                             hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg text-2xl font-bold
                               focus:outline-none focus:border-0 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-600"
-                    data-accordion-target="#accordion-collapse-body-1"
+                    data-accordion-target="#accordion-collapse"
                     aria-expanded={isOpen}
-                    aria-controls="accordion-collapse-body-1"
+                    aria-controls="accordion-collapse"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <span>What you need to know about renting a car</span>
@@ -37,7 +40,7 @@ const Info: FC = () => {
                 </button>
             </h2>
             <div
-                id="accordion-collapse-body-1"
+                id="accordion-collapse"
                 className={"w-full max-w-[60rem] px-5 py-10 " + (isOpen ? '' : 'hidden')}
                 aria-labelledby="accordion-collapse-heading-1"
             >

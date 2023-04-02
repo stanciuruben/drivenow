@@ -6,7 +6,7 @@ import MainForm from './MainForm';
 const Header: FC = () => {
 
     return (
-        <header className='block relative top-[4.5rem] mb-20'>
+        <header className='block relative top-[4.5rem] mb-32'>
             <div className='relative w-full h-[20rem] lg:h-[25rem] overflow-hidden'>
                 <Image src={Background} alt='Picture of a curvy road from above' className='absolute top-0 left-0 h-full object-cover' />
             </div>

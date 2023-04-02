@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Cards: FC = () => {
 
     return (
-        <article className='relative mt-40 mb-20 mx-5 flex flex-nowrap gap-10 overflow-x-auto justify-start lg:justify-center items-center scrollbar-hide'>
+        <article className='relative mt-60 mb-32 mx-5 flex flex-nowrap gap-10 overflow-x-auto justify-start lg:justify-center items-center scrollbar-hide'>
             <div
                 className="block min-w-[15rem] w-[30rem] p-6 bg-white border border-gray-200 rounded-2xl shadow
                         dark:bg-gray-800 dark:border-gray-700"
