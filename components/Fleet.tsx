@@ -64,7 +64,7 @@ const Fleet: FC = () => {
             <h2 className="text-center text-4xl font-extrabold dark:text-white">
                 Meet the fleet
             </h2>
-            <div aria-hidden className="absolute bottom-0 w-full h-[5rem] sm:h-[10rem] bg-gradient-to-t from-gray-100 to-gray-300 dark:from-gray-700 dark:to-gray-900"></div>
+            <div aria-hidden className="absolute bottom-0 w-full h-[5rem] sm:h-[10rem] bg-gradient-to-t from-gray-100 to-gray-300 dark:from-gray-800/50 dark:to-gray-900"></div>
             <ul
                 ref={list}
                 aria-labelledby="slide-show-heading-1"

@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Cards from '@/components/Cards';
 import Info from '@/components/Info';
 import Fleet from '@/components/Fleet';
+import Partners from '@/components/Partners';
 
 export default function Home () {
   return (
@@ -20,6 +21,7 @@ export default function Home () {
         <Cards />
         <Info />
         <Fleet />
+        <Partners />
       </main>
     </>
   )
