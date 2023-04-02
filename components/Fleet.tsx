@@ -87,7 +87,7 @@ const Fleet: FC = () => {
                             aria-current={currentIndex === index}
                             className={"relative first:ml-[calc(50%-10rem)] last:mr-[calc(50%-10rem)] sm:first:ml-[calc(50%-20rem)] sm:last:mr-[calc(50%-20rem)] grow-0 shrink-0 " + item.classes}
                         >
-                            <Image src={item.src} alt={item.alt} fill />
+                            <Image src={item.src} alt={item.alt} quality={100} fill />
                         </li>
                     ))
                 }
