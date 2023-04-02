@@ -106,7 +106,7 @@ const Footer: FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='bg-white'>
+            <div className='bg-white dark:bg-gray-900'>
                 <div className='relative py-5 mx-5 max-w-screen-lg lg:mx-auto flex justify-between items-center'>
                     <div className='child:mr-3'>
                         <a href="#" className='relative inline-block w-8 h-8'>
@@ -122,7 +122,9 @@ const Footer: FC = () => {
                             <Image src='/icons/instagram.svg' alt='Instagram Icon' fill />
                         </a>
                     </div>
-                    <p>© Drivenow 2023</p>
+                    <p className='dark:text-white'>
+                        © Drivenow 2023
+                    </p>
                 </div>
             </div>
         </footer>
