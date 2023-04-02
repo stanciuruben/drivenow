@@ -8,6 +8,7 @@ import Partners from '@/components/Partners';
 import Cards2 from '@/components/Cards2';
 import Chart from '@/components/Chart';
 import { useEffect, useState } from 'react';
+import Footer from '@/components/Footer';
 
 export default function Home () {
   const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null);
@@ -33,6 +34,7 @@ export default function Home () {
         <Partners />
         <Cards2 />
         <Chart isDarkMode={isDarkMode} />
+        <Footer />
       </main>
     </>
   )
