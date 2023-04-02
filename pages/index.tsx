@@ -6,8 +6,16 @@ import Info from '@/components/Info';
 import Fleet from '@/components/Fleet';
 import Partners from '@/components/Partners';
 import Cards2 from '@/components/Cards2';
+import Chart from '@/components/Chart';
+import { useEffect, useState } from 'react';
 
 export default function Home () {
+  const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    setIsDarkMode(document.getElementsByTagName('html')[0].classList.contains('dark'));
+  }, [])
+
   return (
     <>
       <Head>
@@ -17,13 +25,14 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='overflow-x-hidden'>
-        <Navbar />
+        <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <Header />
         <Cards />
         <Info />
         <Fleet />
         <Partners />
         <Cards2 />
+        <Chart isDarkMode={isDarkMode} />
       </main>
     </>
   )

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Partners: FC = () => {
     return (
         <article className="my-40 bg-secondary py-20">
-            <h2 className="text-center text-4xl font-extrabold text-white">
+            <h2 className="text-center text-2xl sm:text-4xl font-extrabold text-white">
                 Our Partners
             </h2>
             <ul className='mx-5 w-[calc(100%-2.5rem)] lg:mx-auto lg:w-full max-w-screen-lg mt-10 flex gap-10 lg:gap-0 items-center justify-center lg:justify-between flex-wrap' >
