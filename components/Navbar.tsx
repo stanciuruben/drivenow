@@ -36,10 +36,6 @@ const Navbar: FC<{
         }
 
         const toggleSubMenu = (): void => {
-            // if (subMenu.current!.classList.contains('hidden')) {
-            //     subMenu.current!.classList.remove('hidden');
-            //     return;
-            // }
             subMenu.current!.classList.toggle('hidden');
         }
 
@@ -75,7 +71,10 @@ const Navbar: FC<{
                         >
                             <li>
                                 <button
-                                    onClick={switchTheme}
+                                    onClick={() => {
+                                        switchTheme();
+                                        toggleSubMenu();
+                                    }}
                                     id="theme-toggle"
                                     type="button"
                                     className="focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 w-full md:w-fit
@@ -90,6 +89,7 @@ const Navbar: FC<{
                             <li>
                                 <Link
                                     href="#"
+                                    onClick={toggleSubMenu}
                                     className="block py-2 pl-3 pr-4 text-secondary rounded md:bg-transparent md:text-black md:p-2 dark:text-white 
                                         focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700"
                                 >
@@ -99,6 +99,7 @@ const Navbar: FC<{
                             <li>
                                 <Link
                                     href="#"
+                                    onClick={toggleSubMenu}
                                     className="block py-2 pl-3 pr-4 text-secondary rounded md:bg-transparent md:text-black md:p-2 dark:text-white 
                                         focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700"
                                 >
@@ -108,6 +109,7 @@ const Navbar: FC<{
                             <li>
                                 <Link
                                     href="#"
+                                    onClick={toggleSubMenu}
                                     className="block py-2 pl-3 pr-4 text-secondary rounded md:bg-transparent md:text-black md:p-2 dark:text-white 
                                         focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700"
                                 >

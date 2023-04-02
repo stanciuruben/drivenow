@@ -2,28 +2,30 @@ import { type FC } from 'react';
 import Image from 'next/image';
 
 const Footer: FC = () => {
+    const linkClasses: string = 'text-gray-400 hover:text-gray-200';
+
     return (
         <footer className='bg-[#171641]'>
             <div className='relative mx-20 md:mx-5 max-w-screen-lg lg:mx-auto flex flex-col md:flex-row justify-between items-start'>
                 <div>
-                    <ul className='text-sm md:text-base text-gray-400 my-10 child:mb-3'>
+                    <ul className='text-sm md:text-base my-10 child:mb-3'>
                         <h3 className='text-base md:text-lg font-bold text-white'>
                             Vehicles
                         </h3>
                         <li>
-                            <a href="#">Cars</a>
+                            <a href="#" className={linkClasses} >Cars</a>
                         </li>
                         <li>
-                            <a href="#">SUVs</a>
+                            <a href="#" className={linkClasses} >SUVs</a>
                         </li>
                         <li>
-                            <a href="#">Trucks</a>
+                            <a href="#" className={linkClasses} >Trucks</a>
                         </li>
                         <li>
-                            <a href="#">Vans & Minivans</a>
+                            <a href="#" className={linkClasses} >Vans & Minivans</a>
                         </li>
                         <li>
-                            <a href="#">Exotic Cars</a>
+                            <a href="#" className={linkClasses} >Exotic Cars</a>
                         </li>
                     </ul>
                     <ul className='text-sm md:text-base text-gray-400 my-10 child:mb-3'>
@@ -31,13 +33,13 @@ const Footer: FC = () => {
                             Customer Service
                         </h3>
                         <li>
-                            <a href="#">Help & FAQs</a>
+                            <a href="#" className={linkClasses} >Help & FAQs</a>
                         </li>
                         <li>
-                            <a href="#">Customers with disabilities</a>
+                            <a href="#" className={linkClasses} >Customers with disabilities</a>
                         </li>
                         <li>
-                            <a href="#">Site Map</a>
+                            <a href="#" className={linkClasses} >Site Map</a>
                         </li>
                     </ul>
                 </div>
@@ -47,25 +49,25 @@ const Footer: FC = () => {
                             Business
                         </h3>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="#" className={linkClasses} >About Us</a>
                         </li>
                         <li>
-                            <a href="#">Meet Our People</a>
+                            <a href="#" className={linkClasses} >Meet Our People</a>
                         </li>
                         <li>
-                            <a href="#">Careers</a>
+                            <a href="#" className={linkClasses} >Careers</a>
                         </li>
                         <li>
-                            <a href="#">Solutions</a>
+                            <a href="#" className={linkClasses} >Solutions</a>
                         </li>
                         <li>
-                            <a href="#">Franchise</a>
+                            <a href="#" className={linkClasses} >Franchise</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#" className={linkClasses} >Contact</a>
                         </li>
                         <li>
-                            <a href="#">Affiliate Programs</a>
+                            <a href="#" className={linkClasses} >Affiliate Programs</a>
                         </li>
                     </ul>
                 </div>
@@ -75,19 +77,19 @@ const Footer: FC = () => {
                             Extras
                         </h3>
                         <li>
-                            <a href="#">Rental Car Products</a>
+                            <a href="#" className={linkClasses} >Rental Car Products</a>
                         </li>
                         <li>
-                            <a href="#">Car Rental Services</a>
+                            <a href="#" className={linkClasses} >Car Rental Services</a>
                         </li>
                         <li>
-                            <a href="#">Protections & Coverages</a>
+                            <a href="#" className={linkClasses} >Protections & Coverages</a>
                         </li>
                         <li>
-                            <a href="#">Loss Damage Waiver</a>
+                            <a href="#" className={linkClasses} >Loss Damage Waiver</a>
                         </li>
                         <li>
-                            <a href="#">Roadside Assistence</a>
+                            <a href="#" className={linkClasses} >Roadside Assistence</a>
                         </li>
                     </ul>
                     <ul className='text-sm md:text-base text-gray-400 my-10 child:mb-3'>
@@ -95,13 +97,13 @@ const Footer: FC = () => {
                             Security & Privacy
                         </h3>
                         <li>
-                            <a href="#">Terms & Conditions</a>
+                            <a href="#" className={linkClasses} >Terms & Conditions</a>
                         </li>
                         <li>
-                            <a href="#">Privacy Policy</a>
+                            <a href="#" className={linkClasses} >Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="#">Frauds & Scams</a>
+                            <a href="#" className={linkClasses} >Frauds & Scams</a>
                         </li>
                     </ul>
                 </div>

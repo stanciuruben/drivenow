@@ -33,14 +33,15 @@ const Cards: FC<{
                         labels: data.map(row => row.month),
                         datasets: [
                             {
-                                label: 'Average daily price per month',
+                                label: 'Average Price',
                                 data: data.map(row => row.count),
                                 backgroundColor: isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
                                 hoverBackgroundColor: '#1f2937',
                                 borderColor: isDarkMode ? 'rgba(85, 81, 225, 0.5)' : 'rgba(85, 81, 225, 0.2)',
-                                hoverBorderColor: 'transparent',
+                                hoverBorderColor: 'rgba(85, 81, 225, 1)',
                                 borderWidth: 3,
                                 borderRadius: 10,
+                                barThickness: 25,
                             }
                         ],
                     },
@@ -60,20 +61,51 @@ const Cards: FC<{
                                     weight: 'normal'
                                 },
                                 padding: 30
+                            },
+                            tooltip: {
+                                titleAlign: 'center',
+                                xAlign: 'center',
+                                borderWidth: 3,
+                                borderColor: 'rgba(85, 81, 225, 1)',
+                                backgroundColor: '#1f2937',
+                                callbacks: {
+                                    label: function (context) {
+                                        let label = context.dataset.label || '';
+
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        if (context.parsed.y !== null) {
+                                            label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                                        }
+                                        return label;
+                                    }
+                                }
                             }
                         },
                         scales: {
                             x: {
                                 grid: {
                                     color: 'transparent'
+                                },
+                                ticks: {
+                                    callback: function (value: number) {
+                                        return data[value].month.charAt(0).toUpperCase();
+                                    }
                                 }
                             },
                             y: {
                                 grid: {
                                     color: 'transparent'
+                                },
+                                ticks: {
+                                    callback: function (value) {
+                                        return '$' + value;
+                                    }
                                 }
                             }
-                        }
+                        },
+
                     }
                 }
             );
