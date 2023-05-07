@@ -164,7 +164,10 @@ const MainForm: FC = () => {
                                     className='absolute top-2 left-2 dark:text-gray-400 flex items-end px-2'
                                 >
                                     <span>Return Location</span>
-                                    <span aria-hidden className='inline-block ml-2 w-4 h-5 bg-[url("/icons/location.svg")] dark:bg-[url("/icons/location-dark.svg")] bg-no-repeat' ></span>
+                                    <span
+                                        aria-hidden
+                                        className='inline-block ml-2 w-4 h-5 bg-[url("/icons/location.svg")] dark:bg-[url("/icons/location-dark.svg")] bg-no-repeat'
+                                    ></span>
                                 </label>
                                 <input
                                     onKeyDown={(e) => {
@@ -235,7 +238,15 @@ const MainForm: FC = () => {
                         <fieldset className='my-10 md:my-5 flex flex-col items-start gap-10 md:gap-5 sm:flex-row sm:items-center justify-between'>
                             <div className='flex items-center'>
                                 <input
-                                    onChange={handleChange}
+                                    onChange={(e) => {
+                                        handleChange(e);
+                                        setTimeout(() => {
+                                            if (values['drop-off'].length > 0 && !values['return-elsewhere']) {
+                                                handleInputFocus(dropOffLabel);
+                                                handleMoblieFocus(dropOffLabel, dropOffField);
+                                            }
+                                        }, 100)
+                                    }}
                                     checked={values['return-elsewhere']}
                                     type="checkbox"
                                     name="return-elsewhere"
