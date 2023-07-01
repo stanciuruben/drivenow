@@ -108,7 +108,7 @@ const Fleet: FC = () => {
                                 focus:outline-none focus:border-0 focus:ring-4 focus:ring-gray-300"
                     disabled={currentIndex === 0}
                 >
-                    <div className="relative w-6 h-7 rotate-180 bg-[url(/icons/chev.svg)] dark:bg-[url(/icons/chev-dark.svg)] bg-no-repeat" ></div>
+                    <div className="relative w-6 h-7 rotate-180 bg-[url(/drivenow/icons/chev.svg)] dark:bg-[url(/drivenow/icons/chev-dark.svg)] bg-no-repeat" ></div>
                 </button>
                 <p className="text-lg font-bold dark:text-white">
                     {labels.current[currentIndex]}
@@ -123,7 +123,7 @@ const Fleet: FC = () => {
                                 focus:outline-none focus:border-0 focus:ring-4 focus:ring-gray-300"
                     disabled={currentIndex === labels.current.length - 1}
                 >
-                    <div className="relative w-6 h-7 bg-[url(/icons/chev.svg)] dark:bg-[url(/icons/chev-dark.svg)] bg-no-repeat" ></div>
+                    <div className="relative w-6 h-7 bg-[url(/drivenow/icons/chev.svg)] dark:bg-[url(/drivenow/icons/chev-dark.svg)] bg-no-repeat" ></div>
                 </button>
             </div>
         </article>

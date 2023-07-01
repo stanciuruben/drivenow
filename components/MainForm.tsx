@@ -83,7 +83,7 @@ const MainForm: FC = () => {
                                 className='absolute top-2 left-2 dark:text-gray-400 flex items-end px-2'
                             >
                                 <span>{values['return-elsewhere'] ? 'Pick-up Location' : 'Pick-up & Return Location'}</span>
-                                <span aria-hidden className='inline-block ml-2 w-4 h-5 bg-[url("/icons/location.svg")] dark:bg-[url("/icons/location-dark.svg")] bg-no-repeat' ></span>
+                                <span aria-hidden className='inline-block ml-2 w-4 h-5 bg-[url(/drivenow"drivenow/icons/location.svg)] dark:bg-[url(/drivenow"drivenow/icons/location-dark.svg)] bg-no-repeat' ></span>
                             </label>
                             <input
                                 onKeyDown={(e) => {
@@ -166,7 +166,7 @@ const MainForm: FC = () => {
                                     <span>Return Location</span>
                                     <span
                                         aria-hidden
-                                        className='inline-block ml-2 w-4 h-5 bg-[url("/icons/location.svg")] dark:bg-[url("/icons/location-dark.svg")] bg-no-repeat'
+                                        className='inline-block ml-2 w-4 h-5 bg-[url(/drivenow"drivenow/icons/location.svg)] dark:bg-[url(/drivenow"drivenow/icons/location-dark.svg)] bg-no-repeat'
                                     ></span>
                                 </label>
                                 <input
@@ -298,7 +298,7 @@ const MainForm: FC = () => {
                                     className='absolute top-2 left-2 dark:text-gray-400 flex items-center px-2'
                                 >
                                     <span>Pick-up Date & Time</span>
-                                    <span aria-hidden className='inline-block ml-2 w-4 h-5 bg-[url("/icons/calendar.svg")] dark:bg-[url("/icons/calendar-dark.svg")] bg-no-repeat' ></span>
+                                    <span aria-hidden className='inline-block ml-2 w-4 h-5 bg-[url(/drivenow"drivenow/icons/calendar.svg)] dark:bg-[url(/drivenow"drivenow/icons/calendar-dark.svg)] bg-no-repeat' ></span>
                                 </label>
                             </div>
                             <div className='relative w-full'>
@@ -314,7 +314,7 @@ const MainForm: FC = () => {
                                     className='absolute top-2 left-2 dark:text-gray-400 flex items-center px-2'
                                 >
                                     <span>Drop-off Date & Time</span>
-                                    <span aria-hidden className='inline-block ml-2 w-4 h-5 bg-[url("/icons/calendar.svg")] dark:bg-[url("/icons/calendar-dark.svg")] bg-no-repeat' ></span>
+                                    <span aria-hidden className='inline-block ml-2 w-4 h-5 bg-[url(/drivenow"drivenow/icons/calendar.svg)] dark:bg-[url(/drivenow"drivenow/icons/calendar-dark.svg)] bg-no-repeat' ></span>
                                 </label>
                             </div>
                         </fieldset>

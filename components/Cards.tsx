@@ -18,7 +18,7 @@ const Cards: FC = () => {
                     <b>Business Rentals</b>
                     <span
                         aria-hidden
-                        className='w-3 h-2.5 bg-no-repeat bg-[url(/icons/chev.svg)] dark:bg-[url(/icons/chev-dark.svg)]'
+                        className='w-3 h-2.5 bg-no-repeat bg-[url(/drivenow/icons/chev.svg)] dark:bg-[url(/drivenow/icons/chev-dark.svg)]'
                     ></span>
                 </a>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -46,7 +46,7 @@ const Cards: FC = () => {
                     <b>Replacement Rentals</b>
                     <span
                         aria-hidden
-                        className='w-3 h-2.5 bg-no-repeat bg-[url(/icons/chev.svg)] dark:bg-[url(/icons/chev-dark.svg)]'
+                        className='w-3 h-2.5 bg-no-repeat bg-[url(/drivenow/icons/chev.svg)] dark:bg-[url(/drivenow/icons/chev-dark.svg)]'
                     ></span>
                 </a>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -74,7 +74,7 @@ const Cards: FC = () => {
                     <b>Current Deals</b>
                     <span
                         aria-hidden
-                        className='w-3 h-2.5 bg-no-repeat bg-[url(/icons/chev.svg)] dark:bg-[url(/icons/chev-dark.svg)]'
+                        className='w-3 h-2.5 bg-no-repeat bg-[url(/drivenow/icons/chev.svg)] dark:bg-[url(/drivenow/icons/chev-dark.svg)]'
                     ></span>
                 </a>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
